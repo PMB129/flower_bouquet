@@ -1,0 +1,35 @@
+.container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.order_btn {
+    width: 500px;
+    height: 500px;
+    border: none;
+    border-radius: 30px;
+    border-color: var(--secondary);
+    box-shadow: 0px 5px 5px 5px #ccc;
+}
+
+.text {
+    padding: 20vh;
+    margin: 0;
+    font-size: 2.5em;
+    font-family: var(--font-monospace);
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+
+#buy_btn{
+    background-image: url(/assets/images/buy1.jpg);
+    background-size: 100%;
+}
+
+#customize_btn{
+    background-image: url(/assets/images/customize1.jpg);
+    background-size: 150%;
+    background-repeat:no-repeat;
+}

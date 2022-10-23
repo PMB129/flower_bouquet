@@ -17,4 +17,9 @@ body,
 html {
     height: 100%;
     width: 100%;
+    font-family: var(--font-sans-serif);
+}
+
+body{
+    background-color: rgba(177, 177, 177, 0.192);
 }
