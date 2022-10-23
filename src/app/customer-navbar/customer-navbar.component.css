@@ -6,15 +6,7 @@
 }
 
 .nav>.nav-links{
-    margin-left: 50px;
     margin-right: 50px;
-}
-
-.nav>.nav-links > ul{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
 }
 
 .nav>.nav-header {
@@ -38,11 +30,12 @@
     font-size: 1.3em;
 }
 
-.nav>.nav-links>ul li a {
+.nav>.nav-links>a {
     display: inline-block;
     margin-top: 5px;
     padding: 20px 20px 20px 20px;
     text-decoration: none;
+    font-weight: 500;
     color: rgb(109, 108, 108);
 }
 
@@ -61,16 +54,17 @@
     content: '.';
     color: transparent;
     background: var(--link-hover-color);
-    height: 1px;
+    height: 2px;
+}
+
+.nav>.nav-links>a:hover{
+    color: var(--link-hover-color);
 }
 
 .nav-links a:hover:after {
     width: 100%;
 }
 
-.nav-links a {
-    transition: all 2s;
-}
 
 .nav-links a:after {
     text-align: left;
@@ -79,7 +73,7 @@
     opacity: 0;
 }
 
-.nav-links ul li a:hover {
+.nav-links a:hover {
     color: #fff;
     z-index: 1;
 }
@@ -96,10 +90,17 @@
     display: none;
 }
 
-@media (max-width:800px) {
+@media (max-width:900px){
+    .nav>.nav-links{
+        margin-right: 25px;
+    }
+}
+
+@media (max-width:850px) {
     .nav>.nav-btn {
         display: inline-block;
         position: absolute;
+        margin: 15px;
         right: 0px;
         top: 0px;
     }
@@ -113,25 +114,25 @@
 
     .nav>.nav-btn>label:hover,
     .nav #nav-check:checked~.nav-btn>label {
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: var(--link-hover-color);
     }
 
     .nav>.nav-btn>label>span {
         display: block;
         width: 25px;
         height: 10px;
-        border-top: 2px solid #eee;
+        border-top: 2px solid rgb(109, 108, 108);
     }
 
     .nav>.nav-links {
         position: absolute;
         display: block;
         width: 100%;
-        background-color: #333;
+        background-color: #fff;
         height: 0px;
         transition: all 0.3s ease-in;
         overflow-y: hidden;
-        top: 50px;
+        top: 80px;
         left: 0px;
     }
 
@@ -145,7 +146,7 @@
     }
 
     .nav>#nav-check:checked~.nav-links {
-        height: calc(100vh - 50px);
+        height: 50vh;
         overflow-y: auto;
     }
 }
