@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CustomerNavbarComponent } from './customer-navbar/customer-navbar.component';
+import { ChooseOrderComponent } from './choose-order/choose-order.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CustomerNavbarComponent,
+    ChooseOrderComponent
   ],
   imports: [
     BrowserModule,
