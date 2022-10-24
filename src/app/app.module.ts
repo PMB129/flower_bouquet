@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CustomerNavbarComponent } from './customer-navbar/customer-navbar.component';
 import { ChooseOrderComponent } from './choose-order/choose-order.component';
+import { OrderArrangedComponent } from './order-arranged/order-arranged.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CustomerNavbarComponent,
-    ChooseOrderComponent
+    ChooseOrderComponent,
+    OrderArrangedComponent
   ],
   imports: [
     BrowserModule,
