@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { SidenavbarComponent } from './sidenavbar/sidenavbar.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ContentComponent } from './content/content.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidenavbarComponent,
     NavbarComponent,
-    ContentComponent
+    ContentComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
