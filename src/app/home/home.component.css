@@ -1,0 +1,93 @@
+
+.bouquet-items img{
+  border-radius: 5%;
+  max-width: 255px;
+}
+.sell h3{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.center-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bouquet-container{
+  display: flex;
+  justify-content:space-between;
+  width: 80%;
+}
+.bouquet-column{
+  max-width: 17%;
+  padding-right: 50px;
+}
+.bouquet-details{
+  width: 160%;
+}
+.details-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+button{
+  width: 255px;
+}
+.bouquet-container .btn{
+  background-color: #6E85B7;
+  align-items: center;
+  color: white;
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about .content {
+  background-color: #f6f9ff;
+  padding: 40px;
+}
+
+.about h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #6E85B7;
+  text-transform: uppercase;
+}
+
+.about h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #6E85B7;
+}
+
+.about p {
+  margin: 15px 0 30px 0;
+  line-height: 24px;
+}
+
+.about .btn-read-more {
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #6E85B7;
+  box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
+}
+
+.about .btn-read-more span {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.about .btn-read-more i {
+  margin-left: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.about .btn-read-more:hover i {
+  transform: translateX(5px);
+}
