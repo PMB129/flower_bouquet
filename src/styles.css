@@ -1,7 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
-*
-{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+:root {
+ --primary-color: #6E85B7;
+ --secondary-color: #B2C8DF;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-fluid {
+    padding: 20px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 10px;
+}
+
+.btn-outline-secondary {
+    color: var(--primary-color);
 }

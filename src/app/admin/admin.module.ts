@@ -4,22 +4,24 @@ import { CommonModule } from '@angular/common';
 import { AdminRoutingModule } from './admin-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { InventoryComponent } from './inventory/inventory.component';
-import { SalesComponent } from './sales/sales.component';
 import { PurchasesComponent } from './purchases/purchases.component';
 import { WebmanagementComponent } from './webmanagement/webmanagement.component';
+import { SalesComponent } from './sales/sales.component';
 import { HeaderComponent } from './header/header.component';
-import { SignInComponent } from './sign-in/sign-in.component';
+import { SigninComponent } from './signin/signin.component';
+import { SignupComponent } from './signup/signup.component';
 
 
 @NgModule({
   declarations: [
     DashboardComponent,
     InventoryComponent,
-    SalesComponent,
     PurchasesComponent,
     WebmanagementComponent,
+    SalesComponent,
     HeaderComponent,
-    SignInComponent
+    SigninComponent,
+    SignupComponent
   ],
   imports: [
     CommonModule,

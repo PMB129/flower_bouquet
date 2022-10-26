@@ -4,17 +4,19 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { InventoryComponent } from './inventory/inventory.component';
 import { PurchasesComponent } from './purchases/purchases.component';
 import { SalesComponent } from './sales/sales.component';
-import { SignInComponent } from './sign-in/sign-in.component';
+import { SigninComponent } from './signin/signin.component';
+import { SignupComponent } from './signup/signup.component';
 import { WebmanagementComponent } from './webmanagement/webmanagement.component';
 
 const routes: Routes = [
   {
     path: 'admin',
-    component: SignInComponent,
+    component: SigninComponent,
   },
   {
     path: 'admin',
     children: [
+      { path: 'signup', component: SignupComponent },
       { path: 'dashboard', component: DashboardComponent },
       { path: 'inventory', component: InventoryComponent },
       { path: 'sales', component: SalesComponent },
