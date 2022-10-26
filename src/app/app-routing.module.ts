@@ -7,8 +7,6 @@ import { CustomSleeveComponent } from './custom-sleeve/custom-sleeve.component';
 import { ArrangedBouquetComponent } from './arranged-bouquet/arranged-bouquet.component';
 import { CustomFlowerComponent } from './custom-flower/custom-flower.component';
 import { OrderComponent } from './order/order.component';
-import { FooterComponent } from './footer/footer.component';
-import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { NgModule, Component } from '@angular/core';
@@ -17,57 +15,53 @@ import { Title } from '@angular/platform-browser';
 
 const routes: Routes = [
   {
-    component:HeaderComponent,
-    path:'header',
+    path: '',
+    component: HomeComponent,
   },
   {
-    component:HomeComponent,
-    path:'',
+    path: '',
+    children: [
+      { component: AboutPageComponent,
+        path: 'about-page',  
+      },
+      {
+        component:OrderComponent,
+        path:'order',
+      },
+      {
+        component:CustomFlowerComponent,
+        path:'custom-flower',
+      },
+      {
+        component:ArrangedBouquetComponent,
+        path:'arranged-bouquet',
+      },
+      {
+        component:CustomSleeveComponent,
+        path:'custom-sleeve',
+      },
+      {
+        component:CustomTieComponent,
+        path:'custom-tie',
+      },
+      {
+        component:CustomCardComponent,
+        path:'custom-card',
+      },
+      {
+        component:CustomConfirmComponent,
+        path:'custom-confirm',
+      },
+      {
+        component:ContactComponent,
+        path:'contact',
+      },
+      {
+        component:OrderListComponent,
+        path:'order-list',
+      }
+    ]
   },
-  {
-    component:AboutPageComponent,
-    path:'about-page',
-  },
-  {
-    component:FooterComponent,
-    path:'footer',
-  },
-  {
-    component:OrderComponent,
-    path:'order',
-  },
-  {
-    component:CustomFlowerComponent,
-    path:'custom-flower',
-  },
-  {
-    component:ArrangedBouquetComponent,
-    path:'arranged-bouquet',
-  },
-  {
-    component:CustomSleeveComponent,
-    path:'custom-sleeve',
-  },
-  {
-    component:CustomTieComponent,
-    path:'custom-tie',
-  },
-  {
-    component:CustomCardComponent,
-    path:'custom-card',
-  },
-  {
-    component:CustomConfirmComponent,
-    path:'custom-confirm',
-  },
-  {
-    component:ContactComponent,
-    path:'contact',
-  },
-  {
-    component:OrderListComponent,
-    path:'order-list',
-  }
 ];
 
 @NgModule({

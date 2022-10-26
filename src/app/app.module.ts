@@ -16,6 +16,7 @@ import { CustomCardComponent } from './custom-card/custom-card.component';
 import { CustomConfirmComponent } from './custom-confirm/custom-confirm.component';
 import { ContactComponent } from './contact/contact.component';
 import { OrderListComponent } from './order-list/order-list.component';
+import { AdminModule } from './admin/admin.module';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { OrderListComponent } from './order-list/order-list.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AdminModule
   ],
   providers: [],
   bootstrap: [AppComponent]
