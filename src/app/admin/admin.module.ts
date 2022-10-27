@@ -9,7 +9,7 @@ import { WebmanagementComponent } from './webmanagement/webmanagement.component'
 import { SalesComponent } from './sales/sales.component';
 import { HeaderComponent } from './header/header.component';
 import { SigninComponent } from './signin/signin.component';
-import { SignupComponent } from './signup/signup.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 @NgModule({
@@ -21,7 +21,7 @@ import { SignupComponent } from './signup/signup.component';
     SalesComponent,
     HeaderComponent,
     SigninComponent,
-    SignupComponent
+    SidebarComponent
   ],
   imports: [
     CommonModule,
