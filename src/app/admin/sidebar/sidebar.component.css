@@ -7,6 +7,8 @@
   z-index: 996;
   transition: all 0.3s;
   padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: #aab7cf transparent;
@@ -16,7 +18,7 @@
 
 @media (max-width: 1199px) {
   .sidebar {
-    left: -300px;
+    left: -350px;
   }
 }
 

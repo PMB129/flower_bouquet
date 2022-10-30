@@ -1,6 +1,7 @@
 :root {
  --primary-color: #6E85B7;
  --secondary-color: #B2C8DF;
+ --dark-text: #39445C;
 }
 
 * {
@@ -19,6 +20,12 @@ body {
 }
 
 .btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 10px;
+}
+
+.btn-primary:focus, .btn-primary:active {
     background-color: var(--primary-color);
     border: none;
     padding: 10px;

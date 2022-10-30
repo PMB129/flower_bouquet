@@ -5,32 +5,34 @@
             <h3 class="fw-bold ps-3" style="color: var(--primary-color);">Bloom Inc.</h3>
         </li>
         <li class="nav-item">  
-        <a routerLink="Dashboard" class="nav-link " >
+        <a routerLink="dashboard" class="nav-link" >
             <span>Dashboard</span>
         </a>
         </li>
         <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
+        <a class="nav-link collapsed" routerLink="sales" href="#">
             <span>Sales</span>
         </a>
         </li>
         <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
+        <a class="nav-link collapsed" routerLink="purchases" href="#">
             <span>Purchases</span>
         </a>
         </li>
         <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
+        <a class="nav-link collapsed" routerLink="inventory" href="#">
             <span>Inventory</span>
         </a>
         </li>
         <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
+        <a class="nav-link collapsed" routerLink="webmanagement" href="#">
             <span>Website Management</span>
         </a>
         </li>
     </ul>
 </aside>
+
+<router-outlet></router-outlet>
   
   
         
