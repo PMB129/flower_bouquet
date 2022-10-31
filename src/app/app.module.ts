@@ -9,13 +9,36 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { RouterModule } from '@angular/router';
 
+import { DashboardComponent } from './admin/dashboard/dashboard.component';
+import { InventoryComponent } from './admin/inventory/inventory.component';
+import { PurchasesComponent } from './admin/purchases/purchases.component';
+import { WebmanagementComponent } from './admin/webmanagement/webmanagement.component';
+import { SalesComponent } from './admin/sales/sales.component';
+import { SigninComponent } from './admin/signin/signin.component';
+import { SidebarComponent } from './admin/sidebar/sidebar.component';
+import { NavbarComponent } from './admin/navbar/navbar.component';
+import { BouquetsComponent } from './admin/bouquets/bouquets.component';
+import { FlowersComponent } from './admin/flowers/flowers.component';
+import { MaterialsComponent } from './admin/materials/materials.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    AboutComponent
+    AboutComponent,
+    // DashboardComponent,
+    // InventoryComponent,
+    // PurchasesComponent,
+    // WebmanagementComponent,
+    // SalesComponent,
+    // SigninComponent,
+    // SidebarComponent,
+    // NavbarComponent,
+    // BouquetsComponent,
+    // FlowersComponent,
+    // MaterialsComponent
   ],
   imports: [
     BrowserModule,
